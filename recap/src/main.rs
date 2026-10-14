@@ -32,6 +32,24 @@ fn main() {
     let number = array[index];
     println!("The number is {number}");
 
+    //FUNCTIONS
+    println!("Enter the first number");
+    let mut num1 = String::new();
+    io::stdin().read_line(&mut num1).expect("Fialed to read line");
+    let num1:i32 = num1.trim().parse().expect("Number 1 was not a number");
+
+    println!("Enter the second number");
+    let mut num2 = String::new();
+    io::stdin().read_line(&mut num2).expect("failed to readline");
+    let num2:i32 = num2.trim().parse().expect("The number entered is not an integer");
+
+    addition(num1,num2);
+
 
 
 }
+
+fn addition(num1:i32, num2:i32){
+    let answer = num1 + num2;
+    println!("The sum of the 2 numbers is {answer}");
+} 
