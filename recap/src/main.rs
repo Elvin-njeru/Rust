@@ -45,6 +45,21 @@ fn main() {
 
     addition(num1,num2);
 
+    // return types
+    let x = 2;
+    plus_one(x);
+
+    //if conditions
+    let mut z = 1;
+    loop {
+        if z > 3 {
+            println!("The value is at max");
+            break;
+        }else {
+            z = z + 1 ;
+            println!("Value not max yet");
+        }
+    }
 
 
 }
@@ -53,3 +68,8 @@ fn addition(num1:i32, num2:i32){
     let answer = num1 + num2;
     println!("The sum of the 2 numbers is {answer}");
 } 
+
+// function with a return type
+fn plus_one(x:i32) -> i32 {
+    x+1
+}
