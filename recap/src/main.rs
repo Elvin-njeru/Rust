@@ -64,6 +64,7 @@ fn main() {
 
 }
 
+// comment
 fn addition(num1:i32, num2:i32){
     let answer = num1 + num2;
     println!("The sum of the 2 numbers is {answer}");
