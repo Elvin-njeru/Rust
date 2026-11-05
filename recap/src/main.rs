@@ -45,6 +45,8 @@ fn main() {
 
     addition(num1,num2);
 
+    substraction(num1,num2);
+
     // return types
     let x = 2;
     plus_one(x);
@@ -70,7 +72,14 @@ fn addition(num1:i32, num2:i32){
     println!("The sum of the 2 numbers is {answer}");
 } 
 
+fn substraction(num1:i32, num2:i32){
+    let answer = num1 - num2;
+    println!("The difference of the 2 numbers is {answer}");
+}
+
 // function with a return type
 fn plus_one(x:i32) -> i32 {
     x+1
 }
+
+// second day comment
